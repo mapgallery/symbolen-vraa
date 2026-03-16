@@ -7,14 +7,14 @@
 <script>
     (async () => {
         const subdir = window.location.pathname.split('/')[2];
-        const main = 'https://github.com/mapgallery/symbolen-sail/blob/main/';
-        const response = await fetch('https://api.github.com/repos/mapgallery/symbolen-sail/contents/' + subdir);
+        const main = 'https://github.com/mapgallery/symbolen-vraa/blob/main/';
+        const response = await fetch('https://api.github.com/repos/mapgallery/symbolen-vraa/contents/' + subdir);
         const data = await response.json();
         let htmlString = `<div class="container">
             <nav class="navbar navbar-expand-lg">
             <div class="container-fluid">
               <ol class="breadcrumb">
-                <li class="breadcrumb-item"><a href="https://mapgallery.github.io/symbolen-sail/">Home</a></li>
+                <li class="breadcrumb-item"><a href="https://mapgallery.github.io/symbolen-vraa/">Home</a></li>
                 <li class="breadcrumb-item active" aria-current="page">${subdir}</li>
               </ol>
               <a class="navbar-brand" href="#">${subdir.toUpperCase()}</a>
